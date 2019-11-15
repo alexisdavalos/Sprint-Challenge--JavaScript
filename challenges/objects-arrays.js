@@ -92,6 +92,7 @@ Once you have the new array created, sort the universities alphabetically and lo
     let education = graduates[i].university;
     universities.push(education);
   };
+  universities.sort();
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
