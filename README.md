@@ -30,13 +30,42 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    The biggest difference between `.forEach` & `.map` is that `.forEach` loops through an existing array and performs some logic,
+    while `.map` returns a new array and does not manipulate the original array
+
 2. What is the difference between a function and a method?
+
+    The difference between a function and a method is that a function is an operation that performs some code,
+    while a method is a function inside of an object.
 
 3. What is closure?
 
+    Closure gives you the ability to put functions together by utilizing the scope
+    A closure is code that's been identified elsewhere and can be used for later.
+    You can only pass values down, not up in the scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. If this is called in the global scope while strict mode is enabled, it will return undefined.
+    Else when this is called in the global scope JS will return the global object or the `window`
+
+    2. Implicit binding is the most common use case, in which the `this` looks to the left of the dot
+    this can only apply to objects that have methods though. 
+
+    3. Explicit Binding has three use cases: call,apply,bind. 
+    Call: You immediately call the function and pass arguments one by one
+    Apply: You immediately call the function and pass arguments in as an array
+    Bind: Does not immediately invoke the function. It does pass the arguments in one by one.
+    The end result however is that bind returns a brand new function that can be invoked later.
+
+    4. There is also New binding, this will construct a new object entirely and `this` will point to
+    the newly constructed object and the parameters passed to it. 
+
 5. Why do we need super() in an extended class?
+
+    You need `super()` in an extended class because that is the method that inherits the parent object's attributes 
+    for use in this new child objects. Thereby the super() method extends the properties of the parent to the child but
+    never from the child to the part.
 
 ## Project Set up
 
